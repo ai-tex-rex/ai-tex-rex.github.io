@@ -1,21 +1,21 @@
 #!/bin/bash
 
-echo "🦖 Setting up tex-Rex..."
+echo "=== Setting up tex-Rex ==="
 
 # Check Python version
 if ! command -v python3 &> /dev/null; then
-    echo "❌ Python 3 is required but not installed."
+    echo "[ERROR] Python 3 is required but not installed."
     exit 1
 fi
 
 # Check pip
 if ! command -v pip3 &> /dev/null; then
-    echo "❌ pip3 is required but not installed."
+    echo "[ERROR] pip3 is required but not installed."
     exit 1
 fi
 
 # Check required Python packages
-echo "📦 Checking Python packages..."
+echo "[INFO] Checking Python packages..."
 required_packages=(httpx ipython jupyter notebook)
 missing_packages=()
 
@@ -26,7 +26,7 @@ for package in "${required_packages[@]}"; do
 done
 
 if [ ${#missing_packages[@]} -ne 0 ]; then
-    echo "⚠️  Missing required packages: ${missing_packages[*]}"
+    echo "[WARNING] Missing required packages: ${missing_packages[*]}"
     echo "Please install them using: pip3 install ${missing_packages[*]}"
 fi
 
@@ -40,7 +40,7 @@ directories=(
     "figure/fig_prompt_coll"
 )
 
-echo "📁 Setting up directory structure..."
+echo "[INFO] Setting up directory structure..."
 for dir in "${directories[@]}"; do
     if [ ! -d "$dir" ]; then
         mkdir -p "$dir"
@@ -50,7 +50,7 @@ done
 
 # Check if main notebook exists
 if [ ! -f "tex_rex.ipynb" ]; then
-    echo "⚠️  Main notebook (tex_rex.ipynb) not found!"
+    echo "[WARNING] Main notebook (tex_rex.ipynb) not found!"
     echo "Please make sure to copy it from the repository."
 fi
 
@@ -64,12 +64,12 @@ template_files=(
     "figure/fig_prompt_coll/analysis_template.md"
 )
 
-echo "📝 Checking template files..."
+echo "[INFO] Checking template files..."
 for file in "${template_files[@]}"; do
     if [ ! -f "$file" ]; then
-        echo "⚠️  Missing template file: $file"
+        echo "[WARNING] Missing template file: $file"
     fi
 done
 
-echo "✅ Setup complete! Please check any warnings above."
-echo "🚀 To get started, open tex_rex.ipynb in Jupyter Notebook." 
+echo "=== Setup complete! Please check any warnings above. ==="
+echo "[INFO] To get started, open tex_rex.ipynb in Jupyter Notebook." 
