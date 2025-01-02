@@ -17,8 +17,6 @@ sdist/
 var/
 wheels/
 tex-Rex_backup/
-hi.py
-Untitled Diagram copy.png
 *.egg-info/
 .installed.cfg
 *.egg
@@ -27,6 +25,7 @@ Untitled Diagram copy.png
 venv/
 ENV/
 env/
+.conda/
 
 # IDE
 .idea/
@@ -41,14 +40,13 @@ Thumbs.db
 # Jupyter Notebook
 .ipynb_checkpoints
 
-
 # Documentation build
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 
-# Ignore specific notebooks
+# Project specific
 tex_rex_me.ipynb
 tex_rex_m.ipynb
 tex_rex_out.ipynb
