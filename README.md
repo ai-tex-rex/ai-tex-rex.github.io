@@ -2,6 +2,10 @@
 
 tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
 
+## About
+
+Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, tex-Rex provides automated feedback for each section of your scientific paper. Our analysis is based on established best practices in scientific communication and helps you craft clear, effective technical documents.
+
 ## Installation
 
 ### Requirements
@@ -58,37 +62,43 @@ Visit our [documentation site](https://ai-tex-rex.github.io/tex-rex.github.io) f
 
 ## Features
 
-Each component provides detailed analysis through specialized analyzers:
+Each component provides detailed analysis through specialized analyzers, following established scientific writing guidelines:
 
 - 📝 **Abstract Analysis**: Evaluates abstracts using `AbstractAnalyzer` class
-  - Provides section-by-section analysis
-  - Generates both general recommendations and specific actions
-  - Uses customizable analysis templates and guidelines
+  - Provides comprehensive structural analysis
+  - Ensures all key components are present
+  - Checks clarity and impact of your research summary
+  - Suggests improvements for better reader engagement
 
 - 📚 **Introduction Review**: Uses `IntroductionAnalyzer` for comprehensive review
-  - Analyzes structure and content against best practices
-  - Provides targeted improvement suggestions
-  - Supports customizable evaluation criteria
+  - Evaluates background information and context
+  - Checks research gap identification
+  - Assesses objectives and hypothesis statements
+  - Ensures proper literature review integration
 
 - 🧪 **Methods Evaluation**: Implements `MethodsAnalyzer` for methodology review
-  - Checks completeness and clarity of methods description
-  - Suggests improvements for reproducibility
-  - Evaluates technical details and procedures
+  - Ensures reproducibility of procedures
+  - Checks completeness of experimental details
+  - Validates technical accuracy and clarity
+  - Reviews statistical approach appropriateness
 
 - 📊 **Results Assessment**: Uses `ResultsAnalyzer` to evaluate findings
-  - Reviews data presentation and interpretation
-  - Checks statistical analysis and significance
-  - Suggests improvements for clarity and impact
+  - Analyzes data presentation effectiveness
+  - Checks statistical analysis validity
+  - Ensures clear connection to research questions
+  - Reviews result interpretation clarity
 
 - 🎯 **Conclusion Analysis**: Employs `ConclusionAnalyzer` for evaluation
-  - Assesses conclusion strength and relevance
-  - Checks alignment with research objectives
-  - Suggests improvements for impact
+  - Verifies alignment with research objectives
+  - Checks impact statement clarity
+  - Evaluates future work suggestions
+  - Ensures proper research context placement
 
 - 🖼️ **Figure Analysis**: Uses `FigureAnalyzer` for visual content
-  - Evaluates figure clarity and effectiveness
-  - Suggests improvements for visual presentation
-  - Reviews caption completeness and accuracy
+  - Applies scientific figure design principles
+  - Checks visual clarity and effectiveness
+  - Reviews caption completeness
+  - Ensures proper data representation
 
 ## Technical Implementation
 
@@ -118,6 +128,10 @@ analyzer.display_results(result)
 ## Contributing
 
 We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for details.
+
+## Acknowledgments
+
+tex-Rex's analysis criteria are inspired by the scientific communication guidelines from MIT's Nuclear Science and Engineering Communication Lab (NSE CommLab). While our tool provides automated feedback, we encourage users to also refer to the original [NSE CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/) for detailed writing guidelines.
 
 ## License
 
