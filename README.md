@@ -13,6 +13,10 @@ Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, 
 - pip3
 - curl or wget
 - unzip
+- httpx
+- ipython
+- jupyter
+- notebook
 
 ### Quick Install
 ```bash
