@@ -6,22 +6,6 @@ tex-Rex is an AI-powered academic paper analysis tool that helps researchers imp
 
 Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, tex-Rex provides automated feedback for each section of your scientific paper. Our analysis is based on established best practices in scientific communication and helps you craft clear, effective technical documents.
 
-## Screenshots
-
-Here's how tex-Rex helps improve your scientific writing:
-
-### Abstract Analysis
-![Abstract Analysis](docs/images/abstract-analysis.png)
-*Get comprehensive feedback on your abstract's structure, clarity, and impact.*
-
-### Methods Evaluation
-![Methods Evaluation](docs/images/methods-analysis.png)
-*Ensure your methodology is clear, reproducible, and well-documented.*
-
-### Figure Analysis
-![Figure Analysis](docs/images/figure-analysis.png)
-*Improve your figures' effectiveness and visual communication.*
-
 ## Installation
 
 ### Requirements
