@@ -3,159 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tex-Rex Documentation</title>
-    <base href="/ai-tex-rex.github.io/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>tex-Rex - AI-Powered Scientific Writing Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
 </head>
-<body>
-    <div class="documentation-container">
-        <!-- Sidebar Navigation -->
-        <nav class="sidebar">
-            <div class="sidebar-header">
-                <h3><i class="fas fa-book-reader"></i> tex-Rex</h3>
-                <p>Documentation</p>
-            </div>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#about">
-                        <i class="fas fa-info-circle"></i> About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#installation">
-                        <i class="fas fa-download"></i> Installation
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#components">
-                        <i class="fas fa-puzzle-piece"></i> Components
-                    </a>
-                    <ul class="sub-nav">
-                        <li><a href="#abstract-analyzer">Abstract Analysis</a></li>
-                        <li><a href="#introduction-analyzer">Introduction Review</a></li>
-                        <li><a href="#methods-analyzer">Methods Evaluation</a></li>
-                        <li><a href="#results-analyzer">Results Assessment</a></li>
-                        <li><a href="#conclusion-analyzer">Conclusion Analysis</a></li>
-                        <li><a href="#figure-analyzer">Figure Analysis</a></li>
+<body class="bg-gray-50">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="fixed w-72 h-screen bg-gray-900 text-white overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center space-x-3 mb-8">
+                    <span class="text-3xl">🦖</span>
+                    <div>
+                        <h1 class="text-xl font-bold">tex-Rex</h1>
+                        <p class="text-gray-400 text-sm">Scientific Writing Assistant</p>
+                    </div>
+                </div>
+                
+                <nav>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#about" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-800 rounded-lg transition-colors">
+                                <i class="fas fa-home w-5"></i>
+                                <span class="ml-3">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#features" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-800 rounded-lg transition-colors">
+                                <i class="fas fa-star w-5"></i>
+                                <span class="ml-3">Features</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#installation" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-800 rounded-lg transition-colors">
+                                <i class="fas fa-download w-5"></i>
+                                <span class="ml-3">Installation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#documentation" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-800 rounded-lg transition-colors">
+                                <i class="fas fa-book w-5"></i>
+                                <span class="ml-3">Documentation</span>
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#usage">
-                        <i class="fas fa-laptop-code"></i> Usage
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#guidelines">
-                        <i class="fas fa-book"></i> Writing Guidelines
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </aside>
 
         <!-- Main Content -->
-        <main class="main-content">
-            <section id="about">
-                <h1>tex-Rex: AI-Powered Scientific Writing Assistant</h1>
-                <p>tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, it provides comprehensive analysis for each section of your paper.</p>
-            </section>
-
-            <section id="installation">
-                <h2>Installation</h2>
-                <h3>Requirements</h3>
-                <ul>
-                    <li>Python 3.10 or higher</li>
-                    <li>pip3</li>
-                    <li>curl or wget</li>
-                    <li>unzip</li>
-                </ul>
+        <main class="flex-1 ml-72 p-8">
+            <!-- Hero Section -->
+            <section id="about" class="max-w-4xl mx-auto mb-16">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl font-bold text-gray-900 mb-4">tex-Rex 🦖</h1>
+                    <p class="text-xl text-gray-600">AI-Powered Academic Paper Analysis Tool</p>
+                </div>
                 
-                <h3>Quick Install</h3>
-                <pre><code class="language-bash">
-# Using curl
-curl -O https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
-
-# Or using wget
-wget https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh</code></pre>
-            </section>
-
-            <section id="components">
-                <h2>Components</h2>
-                
-                <div id="abstract-analyzer" class="component-section">
-                    <h3>Abstract Analysis</h3>
-                    <p>Following MIT's guidelines for effective abstracts, this component evaluates:</p>
-                    <ul>
-                        <li>Comprehensive structural analysis</li>
-                        <li>Key components presence and organization</li>
-                        <li>Research impact clarity</li>
-                        <li>Reader engagement effectiveness</li>
-                    </ul>
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                    <p class="text-gray-700 leading-relaxed">
+                        Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, tex-Rex provides automated feedback for each section of your scientific paper. Our analysis is based on established best practices in scientific communication and helps you craft clear, effective technical documents.
+                    </p>
                 </div>
 
-                <div id="introduction-analyzer" class="component-section">
-                    <h3>Introduction Review</h3>
-                    <p>Based on established scientific writing principles, analyzes:</p>
-                    <ul>
-                        <li>Background information and context</li>
-                        <li>Research gap identification</li>
-                        <li>Objectives and hypothesis statements</li>
-                        <li>Literature review integration</li>
-                    </ul>
-                </div>
-
-                <div id="methods-analyzer" class="component-section">
-                    <h3>Methods Evaluation</h3>
-                    <p>Ensures your methodology is clear and reproducible by checking:</p>
-                    <ul>
-                        <li>Procedure reproducibility</li>
-                        <li>Experimental detail completeness</li>
-                        <li>Technical accuracy and clarity</li>
-                        <li>Statistical approach appropriateness</li>
-                    </ul>
-                </div>
-
-                <div id="results-analyzer" class="component-section">
-                    <h3>Results Assessment</h3>
-                    <p>Reviews your findings presentation through:</p>
-                    <ul>
-                        <li>Data presentation effectiveness</li>
-                        <li>Statistical analysis validity</li>
-                        <li>Research question alignment</li>
-                        <li>Interpretation clarity</li>
-                    </ul>
-                </div>
-
-                <div id="conclusion-analyzer" class="component-section">
-                    <h3>Conclusion Analysis</h3>
-                    <p>Evaluates your conclusion's effectiveness by checking:</p>
-                    <ul>
-                        <li>Research objectives alignment</li>
-                        <li>Impact statement clarity</li>
-                        <li>Future work suggestions</li>
-                        <li>Research context placement</li>
-                    </ul>
-                </div>
-
-                <div id="figure-analyzer" class="component-section">
-                    <h3>Figure Analysis</h3>
-                    <p>Ensures your figures effectively communicate your research by evaluating:</p>
-                    <ul>
-                        <li>Scientific figure design principles</li>
-                        <li>Visual clarity and effectiveness</li>
-                        <li>Caption completeness</li>
-                        <li>Data representation accuracy</li>
-                    </ul>
+                <!-- Screenshots Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="docs/images/abstract-analysis.png" alt="Abstract Analysis" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-900">Abstract Analysis</h3>
+                            <p class="text-gray-600 text-sm">Get comprehensive feedback on your abstract's structure and impact</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="docs/images/methods-analysis.png" alt="Methods Analysis" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-900">Methods Evaluation</h3>
+                            <p class="text-gray-600 text-sm">Ensure your methodology is clear and reproducible</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="usage">
-                <h2>Usage</h2>
-                <p>tex-Rex is designed to be simple to use while providing comprehensive analysis:</p>
-                <pre><code class="language-python">
-# Initialize analyzer
+            <!-- Features Section -->
+            <section id="features" class="max-w-4xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Features</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-file-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Abstract Analysis</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Comprehensive structural analysis</li>
+                            <li>• Key components verification</li>
+                            <li>• Impact clarity assessment</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <div class="text-green-600 mb-4">
+                            <i class="fas fa-flask text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Methods Evaluation</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Procedure reproducibility</li>
+                            <li>• Technical accuracy checks</li>
+                            <li>• Statistical approach validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Installation Section -->
+            <section id="installation" class="max-w-4xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Installation</h2>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Requirements</h3>
+                    <ul class="text-gray-600 mb-6 space-y-2">
+                        <li>• Python 3.10 or higher</li>
+                        <li>• pip3</li>
+                        <li>• curl or wget</li>
+                        <li>• unzip</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold mb-4">Quick Install</h3>
+                    <div class="bg-gray-900 rounded-lg p-4">
+                        <pre class="text-gray-300"><code class="language-bash"># Using curl
+curl -O https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Documentation Section -->
+            <section id="documentation" class="max-w-4xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Documentation</h2>
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Usage Example</h3>
+                    <div class="bg-gray-900 rounded-lg p-4 mb-6">
+                        <pre><code class="language-python"># Initialize analyzer
 analyzer = AbstractAnalyzer(api_key="your-openrouter-api-key")
 
 # Analyze text
@@ -163,22 +149,25 @@ result = await analyzer.analyze_abstract(your_text)
 
 # Display results
 analyzer.display_results(result)</code></pre>
-            </section>
-
-            <section id="guidelines">
-                <h2>Writing Guidelines</h2>
-                <p>tex-Rex's analysis is based on MIT's NSE Communication Lab guidelines. For detailed writing guidance, we recommend consulting:</p>
-                <ul>
-                    <li><a href="https://mitcommlab.mit.edu/nse/use-the-commkit/" target="_blank">MIT NSE CommKit</a></li>
-                    <li>Your institution's writing center</li>
-                    <li>Your field's style guides</li>
-                </ul>
-                <p>Remember that tex-Rex is a tool to assist your writing process, not replace human judgment and expertise.</p>
+                    </div>
+                    
+                    <div class="border-t pt-6">
+                        <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>
+                                <a href="https://mitcommlab.mit.edu/nse/use-the-commkit/" class="text-blue-600 hover:underline">
+                                    • MIT NSE CommKit
+                                </a>
+                            </li>
+                            <li>• Your institution's writing center</li>
+                            <li>• Field-specific style guides</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-bash.min.js"></script>
