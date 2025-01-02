@@ -65,7 +65,7 @@ tex-rex/
 
 ## Documentation
 
-Visit our [documentation site](https://tex-rex.github.io) and [jupyter notebook](tex_rex.ipynb) for detailed information about usage and components.
+Visit our [documentation site](https://ai-tex-rex.github.io) and [jupyter notebook](tex_rex.ipynb) for detailed information about usage and components.
 
 ## Features
 
