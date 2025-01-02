@@ -69,24 +69,49 @@ for dir in "${directories[@]}"; do
     fi
 done
 
-# Copy necessary files
-echo "[INFO] Copying necessary files..."
-files_to_copy=(
-    "tex_rex.ipynb"
-    "abstract/abstract_maker.py"
-    "introduction/introduction_maker.py"
-    "methods/methods_maker.py"
-    "results_discussion/results_maker.py"
-    "conclusion/conclusion_maker.py"
-    "figure/figure_maker.py"
-    "abstract/prompt_coll/analysis_template.md"
-    "introduction/intro_prompt_coll/analysis_template.md"
-    "methods/methods_prompt_coll/analysis_template.md"
-    "results_discussion/results_prompt_coll/analysis_template.md"
-    "conclusion/conclusion_prompt_coll/analysis_template.md"
-    "figure/fig_prompt_coll/analysis_template.md"
+# After creating directories, scan for files
+echo "[INFO] Scanning repository contents..."
+declare -A module_dirs=(
+    ["abstract"]="abstract"
+    ["introduction"]="introduction"
+    ["methods"]="methods"
+    ["results_discussion"]="results_discussion"
+    ["conclusion"]="conclusion"
+    ["figure"]="figure"
 )
 
+# First, let's find all relevant files
+files_to_copy=("tex_rex.ipynb")
+for module in "${!module_dirs[@]}"; do
+    dir="${module_dirs[$module]}"
+    
+    # Find all Python files
+    while IFS= read -r pyfile; do
+        if [ -f "$TEMP_DIR/$pyfile" ]; then
+            files_to_copy+=("$pyfile")
+        fi
+    done < <(find "$TEMP_DIR/$dir" -name "*.py" -type f -printf "%P\n")
+    
+    # Find all JSON files
+    while IFS= read -r jsonfile; do
+        if [ -f "$TEMP_DIR/$jsonfile" ]; then
+            files_to_copy+=("$jsonfile")
+        fi
+    done < <(find "$TEMP_DIR/$dir" -name "*.json" -type f -printf "%P\n")
+    
+    # Find all Markdown files
+    while IFS= read -r mdfile; do
+        if [ -f "$TEMP_DIR/$mdfile" ]; then
+            files_to_copy+=("$mdfile")
+        fi
+    done < <(find "$TEMP_DIR/$dir" -name "*.md" -type f -printf "%P\n")
+done
+
+# Print found files for verification
+echo "[INFO] Found the following files to copy:"
+printf '%s\n' "${files_to_copy[@]}"
+
+# Copy files
 for file in "${files_to_copy[@]}"; do
     if [ -f "$TEMP_DIR/$file" ]; then
         dir=$(dirname "$file")
@@ -114,30 +139,11 @@ if [ ${#missing_packages[@]} -ne 0 ]; then
     echo "Please install them using: pip3 install ${missing_packages[*]}"
 fi
 
+# Use the same list for essential files
+essential_files=("${files_to_copy[@]}")
+
 # After extraction, verify essential files
 echo "[INFO] Verifying repository contents..."
-essential_files=(
-    "tex_rex.ipynb"
-    "abstract/abstract_maker.py"
-    "abstract/prompt_coll/analysis_template.md"
-    "abstract/prompt_coll/prompt_template.json"
-    "introduction/introduction_maker.py"
-    "introduction/intro_prompt_coll/analysis_template.md"
-    "introduction/intro_prompt_coll/prompt_template.json"
-    "methods/methods_maker.py"
-    "methods/methods_prompt_coll/analysis_template.md"
-    "methods/methods_prompt_coll/prompt_template.json"
-    "results_discussion/results_maker.py"
-    "results_discussion/results_prompt_coll/analysis_template.md"
-    "results_discussion/results_prompt_coll/prompt_template.json"
-    "conclusion/conclusion_maker.py"
-    "conclusion/conclusion_prompt_coll/analysis_template.md"
-    "conclusion/conclusion_prompt_coll/prompt_template.json"
-    "figure/figure_maker.py"
-    "figure/fig_prompt_coll/analysis_template.md"
-    "figure/fig_prompt_coll/prompt_template.json"
-)
-
 missing_files=()
 for file in "${essential_files[@]}"; do
     if [ ! -f "$TEMP_DIR/$file" ]; then
