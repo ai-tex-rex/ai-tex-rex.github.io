@@ -1,8 +1,6 @@
 # tex-Rex 🦖
 
-<p align="center">
-  <img src="logo.png" alt="tex-Rex Logo" width="200">
-</p>
+<img src="logo.png" alt="tex-Rex Logo" width="200">
 
 tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
 
