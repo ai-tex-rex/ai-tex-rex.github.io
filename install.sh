@@ -114,9 +114,51 @@ if [ ${#missing_packages[@]} -ne 0 ]; then
     echo "Please install them using: pip3 install ${missing_packages[*]}"
 fi
 
+# After extraction, verify essential files
+echo "[INFO] Verifying repository contents..."
+essential_files=(
+    "tex_rex.ipynb"
+    "abstract/abstract_maker.py"
+    "abstract/prompt_coll/analysis_template.md"
+    "abstract/prompt_coll/prompt_template.json"
+    "introduction/introduction_maker.py"
+    "introduction/intro_prompt_coll/analysis_template.md"
+    "introduction/intro_prompt_coll/prompt_template.json"
+    "methods/methods_maker.py"
+    "methods/methods_prompt_coll/analysis_template.md"
+    "methods/methods_prompt_coll/prompt_template.json"
+    "results_discussion/results_maker.py"
+    "results_discussion/results_prompt_coll/analysis_template.md"
+    "results_discussion/results_prompt_coll/prompt_template.json"
+    "conclusion/conclusion_maker.py"
+    "conclusion/conclusion_prompt_coll/analysis_template.md"
+    "conclusion/conclusion_prompt_coll/prompt_template.json"
+    "figure/figure_maker.py"
+    "figure/fig_prompt_coll/analysis_template.md"
+    "figure/fig_prompt_coll/prompt_template.json"
+)
+
+missing_files=()
+for file in "${essential_files[@]}"; do
+    if [ ! -f "$TEMP_DIR/$file" ]; then
+        missing_files+=("$file")
+    fi
+done
+
+if [ ${#missing_files[@]} -ne 0 ]; then
+    echo "[ERROR] Repository is missing essential files:"
+    printf '%s\n' "${missing_files[@]}"
+    echo "Please check the repository structure or contact the maintainers."
+    rm -rf $TEMP_DIR $ZIP_FILE
+    exit 1
+fi
+
 # Clean up
 echo "[INFO] Cleaning up..."
 rm -rf $TEMP_DIR $ZIP_FILE
 
 echo "=== Setup complete! Please check any warnings above. ==="
-echo "[INFO] To get started, open tex_rex.ipynb in Jupyter Notebook." 
+echo "[INFO] To get started, open tex_rex.ipynb in Jupyter Notebook."
+
+# Self-delete the install script
+rm -- "$0" 
