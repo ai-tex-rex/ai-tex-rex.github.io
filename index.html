@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeX-Rex Documentation</title>
-    <base href="/tex-rex/">
+    <title>tex-Rex Documentation</title>
+    <base href="/ai-tex-rex.github.io/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,13 +15,13 @@
         <!-- Sidebar Navigation -->
         <nav class="sidebar">
             <div class="sidebar-header">
-                <h3><i class="fas fa-book-reader"></i> TeX-Rex</h3>
+                <h3><i class="fas fa-book-reader"></i> tex-Rex</h3>
                 <p>Documentation</p>
             </div>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#getting-started">
-                        <i class="fas fa-rocket"></i> Getting Started
+                    <a class="nav-link active" href="#about">
+                        <i class="fas fa-info-circle"></i> About
                     </a>
                 </li>
                 <li class="nav-item">
@@ -34,22 +34,22 @@
                         <i class="fas fa-puzzle-piece"></i> Components
                     </a>
                     <ul class="sub-nav">
-                        <li><a href="#abstract-analyzer">Abstract Analyzer</a></li>
-                        <li><a href="#introduction-analyzer">Introduction Analyzer</a></li>
-                        <li><a href="#methods-analyzer">Methods Analyzer</a></li>
-                        <li><a href="#results-analyzer">Results Analyzer</a></li>
-                        <li><a href="#conclusion-analyzer">Conclusion Analyzer</a></li>
-                        <li><a href="#figure-analyzer">Figure Analyzer</a></li>
+                        <li><a href="#abstract-analyzer">Abstract Analysis</a></li>
+                        <li><a href="#introduction-analyzer">Introduction Review</a></li>
+                        <li><a href="#methods-analyzer">Methods Evaluation</a></li>
+                        <li><a href="#results-analyzer">Results Assessment</a></li>
+                        <li><a href="#conclusion-analyzer">Conclusion Analysis</a></li>
+                        <li><a href="#figure-analyzer">Figure Analysis</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#api-reference">
-                        <i class="fas fa-code"></i> API Reference
+                    <a class="nav-link" href="#usage">
+                        <i class="fas fa-laptop-code"></i> Usage
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#examples">
-                        <i class="fas fa-laptop-code"></i> Examples
+                    <a class="nav-link" href="#guidelines">
+                        <i class="fas fa-book"></i> Writing Guidelines
                     </a>
                 </li>
             </ul>
@@ -57,193 +57,123 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <section id="getting-started">
-                <h1>Getting Started with TeX-Rex</h1>
-                <p>TeX-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions.</p>
-                
-                <h2>Prerequisites</h2>
-                <ul>
-                    <li>Python 3.8 or higher</li>
-                    <li>OpenAI API key</li>
-                    <li>Basic understanding of academic paper structure</li>
-                </ul>
+            <section id="about">
+                <h1>tex-Rex: AI-Powered Scientific Writing Assistant</h1>
+                <p>tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, it provides comprehensive analysis for each section of your paper.</p>
             </section>
 
             <section id="installation">
                 <h2>Installation</h2>
-                <pre><code class="language-bash">pip install tex-rex</code></pre>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Python 3.10 or higher</li>
+                    <li>pip3</li>
+                    <li>curl or wget</li>
+                    <li>unzip</li>
+                </ul>
                 
-                <h3>Configuration</h3>
-                <pre><code class="language-python">
-# Set your OpenAI API key
-import os
-os.environ["OPENAI_API_KEY"] = "your-api-key-here"
-                </code></pre>
+                <h3>Quick Install</h3>
+                <pre><code class="language-bash">
+# Using curl
+curl -O https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+
+# Or using wget
+wget https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh</code></pre>
             </section>
 
             <section id="components">
                 <h2>Components</h2>
                 
                 <div id="abstract-analyzer" class="component-section">
-                    <h3>Abstract Analyzer</h3>
-                    <p>The Abstract Analyzer evaluates the clarity, completeness, and impact of your paper's abstract.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Abstract Analysis</h3>
+                    <p>Following MIT's guidelines for effective abstracts, this component evaluates:</p>
                     <ul>
-                        <li>Checks for all essential components (background, methods, results, conclusions)</li>
-                        <li>Evaluates clarity and conciseness</li>
-                        <li>Suggests improvements for impact</li>
+                        <li>Comprehensive structural analysis</li>
+                        <li>Key components presence and organization</li>
+                        <li>Research impact clarity</li>
+                        <li>Reader engagement effectiveness</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from abstract.abstract_maker import AbstractAnalyzer
-
-analyzer = AbstractAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_abstract(text)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
 
                 <div id="introduction-analyzer" class="component-section">
-                    <h3>Introduction Analyzer</h3>
-                    <p>The Introduction Analyzer assesses the background information, research gap identification, and hypothesis presentation.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Introduction Review</h3>
+                    <p>Based on established scientific writing principles, analyzes:</p>
                     <ul>
-                        <li>Evaluates literature review comprehensiveness</li>
-                        <li>Checks research gap clarity</li>
-                        <li>Assesses hypothesis formulation</li>
+                        <li>Background information and context</li>
+                        <li>Research gap identification</li>
+                        <li>Objectives and hypothesis statements</li>
+                        <li>Literature review integration</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from introduction.introduction_maker import IntroductionAnalyzer
-
-analyzer = IntroductionAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_introduction(text)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
 
                 <div id="methods-analyzer" class="component-section">
-                    <h3>Methods Analyzer</h3>
-                    <p>The Methods Analyzer reviews methodology description, reproducibility, and technical clarity.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Methods Evaluation</h3>
+                    <p>Ensures your methodology is clear and reproducible by checking:</p>
                     <ul>
-                        <li>Checks procedure completeness</li>
-                        <li>Evaluates reproducibility</li>
-                        <li>Assesses technical clarity</li>
+                        <li>Procedure reproducibility</li>
+                        <li>Experimental detail completeness</li>
+                        <li>Technical accuracy and clarity</li>
+                        <li>Statistical approach appropriateness</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from methods.methods_maker import MethodsAnalyzer
-
-analyzer = MethodsAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_methods(text)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
 
                 <div id="results-analyzer" class="component-section">
-                    <h3>Results Analyzer</h3>
-                    <p>The Results Analyzer examines data presentation, statistical analysis, and interpretation.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Results Assessment</h3>
+                    <p>Reviews your findings presentation through:</p>
                     <ul>
-                        <li>Evaluates data presentation clarity</li>
-                        <li>Checks statistical analysis validity</li>
-                        <li>Assesses result interpretation</li>
+                        <li>Data presentation effectiveness</li>
+                        <li>Statistical analysis validity</li>
+                        <li>Research question alignment</li>
+                        <li>Interpretation clarity</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from results_discussion.results_maker import ResultsAnalyzer
-
-analyzer = ResultsAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_results(text)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
 
                 <div id="conclusion-analyzer" class="component-section">
-                    <h3>Conclusion Analyzer</h3>
-                    <p>The Conclusion Analyzer evaluates conclusion validity, impact statements, and future work suggestions.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Conclusion Analysis</h3>
+                    <p>Evaluates your conclusion's effectiveness by checking:</p>
                     <ul>
-                        <li>Checks conclusion validity</li>
-                        <li>Evaluates impact statements</li>
-                        <li>Assesses future work suggestions</li>
+                        <li>Research objectives alignment</li>
+                        <li>Impact statement clarity</li>
+                        <li>Future work suggestions</li>
+                        <li>Research context placement</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from conclusion.conclusion_maker import ConclusionAnalyzer
-
-analyzer = ConclusionAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_conclusion(text)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
 
                 <div id="figure-analyzer" class="component-section">
-                    <h3>Figure Analyzer</h3>
-                    <p>The Figure Analyzer analyzes figure quality, clarity, and relevance.</p>
-                    
-                    <h4>Features</h4>
+                    <h3>Figure Analysis</h3>
+                    <p>Ensures your figures effectively communicate your research by evaluating:</p>
                     <ul>
-                        <li>Evaluates visual clarity</li>
-                        <li>Checks figure-text alignment</li>
-                        <li>Assesses caption completeness</li>
+                        <li>Scientific figure design principles</li>
+                        <li>Visual clarity and effectiveness</li>
+                        <li>Caption completeness</li>
+                        <li>Data representation accuracy</li>
                     </ul>
-
-                    <h4>Usage</h4>
-                    <pre><code class="language-python">
-from figure.figure_maker import FigureAnalyzer
-
-analyzer = FigureAnalyzer(api_key="your-api-key")
-result = await analyzer.analyze_figures(figure_path)
-analyzer.display_results(result)
-                    </code></pre>
                 </div>
             </section>
 
-            <section id="api-reference">
-                <h2>API Reference</h2>
-                <p>Each analyzer component follows a similar API pattern:</p>
-                
-                <h3>Common Methods</h3>
-                <ul>
-                    <li><code>analyze_*(text)</code>: Main analysis method</li>
-                    <li><code>display_results(result)</code>: Display analysis results</li>
-                    <li><code>get_suggestions()</code>: Get improvement suggestions</li>
-                </ul>
+            <section id="usage">
+                <h2>Usage</h2>
+                <p>tex-Rex is designed to be simple to use while providing comprehensive analysis:</p>
+                <pre><code class="language-python">
+# Initialize analyzer
+analyzer = AbstractAnalyzer(api_key="your-openrouter-api-key")
+
+# Analyze text
+result = await analyzer.analyze_abstract(your_text)
+
+# Display results
+analyzer.display_results(result)</code></pre>
             </section>
 
-            <section id="examples">
-                <h2>Examples</h2>
-                <h3>Complete Paper Analysis</h3>
-                <pre><code class="language-python">
-# Example of analyzing a complete paper
-from tex_rex import TexRex
-
-analyzer = TexRex(api_key="your-api-key")
-
-# Analyze abstract
-abstract_result = await analyzer.analyze_abstract(abstract_text)
-
-# Analyze introduction
-intro_result = await analyzer.analyze_introduction(intro_text)
-
-# Analyze methods
-methods_result = await analyzer.analyze_methods(methods_text)
-
-# Display combined results
-analyzer.display_all_results()
-                </code></pre>
+            <section id="guidelines">
+                <h2>Writing Guidelines</h2>
+                <p>tex-Rex's analysis is based on MIT's NSE Communication Lab guidelines. For detailed writing guidance, we recommend consulting:</p>
+                <ul>
+                    <li><a href="https://mitcommlab.mit.edu/nse/use-the-commkit/" target="_blank">MIT NSE CommKit</a></li>
+                    <li>Your institution's writing center</li>
+                    <li>Your field's style guides</li>
+                </ul>
+                <p>Remember that tex-Rex is a tool to assist your writing process, not replace human judgment and expertise.</p>
             </section>
         </main>
     </div>
