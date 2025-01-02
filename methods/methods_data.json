@@ -1,0 +1,87 @@
+[
+
+{
+    "title": "Core Principles",
+    "subsections": {
+        "Dual Purpose": [
+            "Enable experiment reproduction by other researchers",
+            "Validate your research approach and results", 
+            "Bridge the gap between research questions and findings"
+        ],
+        "Structure and Organization": [
+            "Use descriptive subheadings for clear navigation",
+            "Progress logically from general to specific",
+            "Group related methods together",
+            "Include informative figures for complex setups"
+        ],
+        "Essential Components": {
+            "Study Context": [
+                "Justify methodology choices",
+                "Reference and cite original method sources",
+                "Compare with alternatives when relevant",
+                "Document study setting and participants"
+            ],
+            "Detailed Procedures": [
+                "Provide step-by-step documentation",
+                "Include critical parameters",
+                "Detail data collection methods", 
+                "Explain analysis procedures",
+                "Document any modifications to standard methods"
+            ],
+            "Data Analysis": [
+                "Describe data preparation steps",
+                "Detail analytical methods",
+                "Explain coding schemes",
+                "Justify analytical decisions"
+            ]
+        }
+    }
+},
+{
+    "title": "Writing Guidelines",
+    "subsections": {
+        "Language and Style": [
+            "Use past tense consistently",
+            {
+                "Choose appropriate voice": [
+                    "Passive voice: \"The samples were analyzed...\"",
+                    "Active voice: \"We analyzed the samples...\"",
+                    "Follow journal preferences"
+                ]
+            },
+            "Maintain scientific objectivity",
+            "Write concisely with precise language"
+        ],
+        "Detail Management": [
+            "Assume field-specific knowledge",
+            "Explain non-standard procedures thoroughly", 
+            "Document critical parameters",
+            "Avoid excessive detail for standard methods",
+            "Provide sufficient detail for modifications"
+        ]
+    }
+},
+{
+    "title": "Common Pitfalls to Avoid",
+    "items": [
+        "Inconsistent voice or tense",
+        "Missing critical parameters",
+        "Chain citations for methods",
+        "Insufficient detail for modifications", 
+        "Poor logical flow between sections",
+        "Unclear relationship between methods and research goals"
+    ]
+},
+{
+    "title": "Self-Assessment Checklist",
+    "items": [
+        "All critical information included",
+        "Methods justify research approach",
+        "Procedures are reproducible",
+        "Consistent terminology used",
+        "Appropriate citations provided",
+        "Logical flow maintained",
+        "Journal guidelines followed"
+    ]
+}
+]

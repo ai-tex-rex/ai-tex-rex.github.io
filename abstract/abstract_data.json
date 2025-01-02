@@ -1,0 +1,111 @@
+[
+
+    {
+        "title": "Understanding the Foundation",
+        "subsections": {
+            "Purpose and Function": [
+                "Serves as a standalone summary of your research",
+                "Acts as an advertisement for your paper/talk/poster", 
+                "Helps readers decide whether to invest time in full text",
+                "Typically 150-300 words in single paragraph format"
+            ],
+            "Audience Analysis": [
+                "Match technical depth to publication venue:",
+                "Broad journals (e.g., Nature): Minimize jargon",
+                "Specialized journals: Technical precision acceptable", 
+                "Conference presentations: Target session audience",
+                "Departmental seminars: Graduate student level",
+                "Consider reader's existing knowledge base",
+                "Adjust language complexity accordingly"
+            ]
+        }
+    },
+    {
+        "title": "Essential Components",
+        "subsections": {
+            "Structural Elements": {
+                "Motivating Background": [
+                    "Establish research context",
+                    "Highlight significance", 
+                    "Identify knowledge gaps"
+                ],
+                "Problem Statement": [
+                    "Define research objectives",
+                    "State specific goals",
+                    "Present research questions"
+                ],
+                "Methodology Overview": [
+                    "Outline key methods",
+                    "Describe research approach",
+                    "Highlight novel techniques"
+                ],
+                "Results Presentation": [
+                    "Include quantitative findings",
+                    "Present key discoveries",
+                    "Emphasize significant outcomes"
+                ],
+                "Impact Statement": [
+                    "Connect to broader implications",
+                    "Highlight applications",
+                    "Suggest future directions"
+                ]
+            },
+            "Writing Formats": {
+                "Hourglass Structure (General Audience)": [
+                    "Begin broad (significance)",
+                    "Narrow focus (specific research)",
+                    "End broad (implications)"
+                ],
+                "Direct Structure (Technical Audience)": [
+                    "Lead with key findings",
+                    "Support with methodology",
+                    "Conclude with impact"
+                ]
+            }
+        }
+    },
+    {
+        "title": "Optimization Strategies",
+        "subsections": {
+            "Language Guidelines": [
+                "Use precise, concise language",
+                "Define technical terms when needed",
+                "Break complex ideas into simple statements",
+                "Choose active voice when possible",
+                "Include searchable keywords"
+            ],
+            "Quality Control": [
+                "Follow publisher specifications",
+                "Obtain feedback from all co-authors",
+                "Review with subject matter experts",
+                "Consider peer review from target audience",
+                "Check for completeness and accuracy"
+            ]
+        }
+    },
+    {
+        "title": "Common Pitfalls to Avoid",
+        "items": [
+            "Stating intentions instead of findings",
+            "Using vague descriptions",
+            "Including unnecessary background",
+            "Exceeding word limits",
+            "Omitting quantitative results",
+            "Using undefined abbreviations",
+            "Including citations (unless required)"
+        ]
+    },
+    {
+        "title": "Final Checklist",
+        "items": [
+            "Follows journal guidelines",
+            "Contains all essential components",
+            "Presents specific, quantitative results",
+            "Clearly states implications",
+            "Uses appropriate technical depth",
+            "Approved by all co-authors",
+            "Stands independently from main text",
+            "Includes required keywords"
+        ]
+}
+]

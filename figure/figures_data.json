@@ -1,0 +1,246 @@
+[
+  {
+    "title": "Pre-Design Planning", 
+    "subsections": {
+      "Define Action Goals": {
+        "items": [
+          "Identify the intended audience: Consider their expertise level (collaborators, journal readers, students, general public) and adjust complexity accordingly.",
+          "Establish a clear purpose: What message should the figure convey? Focus on user-centric outcomes and ensure the figure supports this message.",
+          "Determine the core takeaway message: What is the single most important point you want the audience to understand?"
+        ]
+      },
+      "Message Clarification": {
+        "steps": [
+          "Determine core takeaway message: What is the single most important point you want the audience to understand?",
+          "Identify supporting evidence requirements: What data or information is needed to support your message?", 
+          "Evaluate complexity needs: How much detail is necessary to convey your message effectively?"
+        ]
+      },
+      "Medium Adaptation": {
+        "display_context": {
+          "Journal articles": "detailed, high-resolution figures",
+          "Presentations": "simplified, high-contrast visuals", 
+          "Posters": "balance between detail and visibility"
+        },
+        "notes": ["Adjust element sizes and thickness accordingly."]
+      }
+    }
+  },
+  {
+    "title": "Core Principles",
+    "subsections": {
+      "Design Impact on Data Perception": {
+        "Color Psychology": [
+          "Use color intentionally. Blue conveys trust and calm, while red suggests urgency and alarm.",
+          "Consider color blindness accessibility."
+        ],
+        "Scale Considerations": [
+          "Use appropriate scaling for accurate data representation.",
+          "Avoid misleading scales that create false equivalencies.",
+          "Ensure data ranges reflect meaningful distinctions."
+        ],
+        "Data Normalization": [
+          "Use population-adjusted metrics for better comparisons.",
+          "Consider underlying variables that affect interpretation."
+        ]
+      },
+      "Visual Hierarchy": [
+        "Structure information in a logical order.",
+        "Break complex information into digestible sections.",
+        "Guide readers through the narrative."
+      ],
+      "Technical Fundamentals": {
+        "Image Data Types": {
+          "Raster Data": "Use for complex images (photos, microscopy). Resolution dependent.",
+          "Vector Data": "Use for charts, diagrams, text. Resolution independent."
+        },
+        "Color Models": {
+          "RGB": "Standard for digital display.",
+          "CMYK": "Used in printing. Consider if required by the journal."
+        },
+        "Bit Depth": ["Use 8-bit for publication. Downsample higher bit depths carefully."]
+      }
+    }
+  },
+  {
+    "title": "Figure Categories and Design Approaches",
+    "subsections": {
+      "Data Visualization": {
+        "main_points": [
+          "Chart type selection: Choose based on data characteristics.",
+          "Visual hierarchy optimization: Guide the reader's eye.",
+          "Appropriate scaling and labeling: Ensure clarity and accuracy."
+        ],
+        "resources": [
+          "Choose the Right Chart Type for Your Data guide",
+          "The Data Visualization Catalogue",
+          "The Science Behind Good Charts"
+        ]
+      },
+      "Abstract Concept Visualization": {
+        "types": [
+          "Cartoons: Simplified illustrations focusing on core concept elements.",
+          "Flowcharts: Process visualization and decision pathway mapping.",
+          "Symbolic Representation: Parameter distillation and abstract element visualization."
+        ]
+      },
+      "Image-Based Figures": [
+        "Background control: Ensure a clean background.",
+        "Diagram/model creation: Use diagrams to explain complex images.",
+        "Component labeling: Clearly label all parts of the image.",
+        "Schematic accompaniment: Provide a schematic to aid understanding."
+      ]
+    }
+  },
+  {
+    "title": "Workflow Steps",
+    "subsections": {
+      "Preparing Components": {
+        "Charts and Graphs": [
+          "Create in vector format.",
+          "Export as PDF for compatibility.",
+          "Maintain editability."
+        ],
+        "Scientific Images": [
+          "Use appropriate lookup tables (LUTs).",
+          "Convert to 8-bit RGB carefully.",
+          "Preserve original data."
+        ],
+        "Regular Photos": [
+          "Maintain original format when possible.",
+          "Minimize processing steps.",
+          "Document any modifications."
+        ]
+      },
+      "Figure Layout": {
+        "Using Inkscape": [
+          "Import and arrange components.",
+          "Apply clipping masks as needed.",
+          "Add annotations and labels."
+        ],
+        "Scale Bars": [
+          "Calculate precise measurements.",
+          "Create as vector objects.",
+          "Position appropriately."
+        ]
+      },
+      "Final Export": {
+        "Raster Requirements": [
+          "Export as PNG or TIFF.",
+          "Maintain resolution ≥600 DPI."
+        ],
+        "Vector Requirements": [
+          "Export as PDF/EPS.",
+          "Control image compression.",
+          "Verify format compliance."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Optimization Techniques",
+    "subsections": {
+      "Visual Enhancement Techniques": [
+        "Adjust opacity for secondary information.",
+        "Highlight key data points.",
+        "Provide introductory context.",
+        "Use consistent styling."
+      ],
+      "Reference Implementation": [
+        "Scale bar inclusion: Always include scale bars when appropriate.",
+        "Relatable size comparisons: Use common objects for size reference.",
+        "Common knowledge anchoring: Relate data to familiar concepts."
+      ],
+      "Signal-to-Noise Optimization": [
+        "Data selectivity: Focus on the most important data.",
+        "Minimal non-critical elements: Remove unnecessary visual elements.",
+        "Strategic emphasis using color/bold: Highlight key information.",
+        "Clear, direct labeling: Use concise and informative labels.",
+        "Message-focused titles: Ensure titles clearly convey the figure's message."
+      ]
+    }
+  },
+  {
+    "title": "Quality Control",
+    "subsections": {
+      "Technical Checks": [
+        "Verify resolution requirements.",
+        "Confirm color space compliance.",
+        "Check file format specifications."
+      ],
+      "Data Integrity": [
+        "Document all transformations.",
+        "Maintain original files.",
+        "Create reproducible workflow."
+      ]
+    }
+  },
+  {
+    "title": "Best Practices",
+    "subsections": {
+      "guidelines": [
+        "Save original data separately.",
+        "Document all processing steps.",
+        "Push format decisions to the end of the workflow.",
+        "Maintain highest quality until final export.",
+        "Create backup copies at key stages.",
+        "Don't rely on software defaults. Customize fonts, colors, axes, etc.",
+        "Avoid misleading elements. Use appropriate scales and axes.",
+        "Eliminate chartjunk. Remove unnecessary visual elements.",
+        "Prioritize message over aesthetics. Focus on clarity and readability."
+      ]
+    }
+  },
+  {
+    "title": "Technical Resources",
+    "subsections": {
+      "Design Tools": [
+        "GIMP2 (Photoshop alternative)",
+        "Inkscape (Illustrator alternative)",
+        "SolidWorks",
+        "Coblis (Color blindness simulator)",
+        "Adobe Color"
+      ],
+      "Recommended Software": {
+        "Data Visualization": [
+          "Matplotlib (Python)",
+          "R (Statistical Computing)",
+          "D3.js (Web-based)"
+        ],
+        "Vector Graphics": [
+          "Inkscape",
+          "TikZ/PGF (TeX)"
+        ],
+        "Image Processing": [
+          "GIMP",
+          "ImageMagick"
+        ],
+        "Specialized Tools": [
+          "Cytoscape (Network Visualization)",
+          "Circos (Circular Visualization)"
+        ]
+      }
+    }
+  },
+  {
+    "title": "Quality Assurance Checklist",
+    "subsections": {
+      "items": [
+        "Critical information completeness",
+        "Technical accuracy verification",
+        "Terminology consistency",
+        "Logical flow confirmation",
+        "Accessibility considerations", 
+        "Medium-appropriate formatting",
+        "Figure communicates intended message clearly",
+        "Design is appropriate for target audience",
+        "Caption is complete and informative",
+        "Colors are used effectively and accessibly",
+        "No misleading elements present",
+        "Chartjunk has been eliminated",
+        "Technical accuracy is maintained",
+        "Format is suitable for intended medium"
+      ]
+    }
+  }
+]

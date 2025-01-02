@@ -1,0 +1,113 @@
+[
+    {
+        "title": "Pre-Writing Strategy",
+        "subsections": {
+            "Initial Planning": [
+                "Review your research questions and hypotheses",
+                "Analyze journal requirements and field conventions", 
+                "Study exemplar papers in your target journal",
+                "Define your audience's expertise level"
+            ],
+            "Core Purpose Assessment": [
+                "Identify main findings and conclusions",
+                "Plan evidence chain supporting your assertions"
+            ],
+            "Choose appropriate structure": [
+                "Separate Results and Discussion (traditional)",
+                "Combined Results & Discussion with Conclusion", 
+                "Three-part structure (Results, Discussion, Conclusion)"
+            ]
+        }
+    },
+    {
+        "title": "Writing the Results Section",
+        "subsections": {
+            "Structural Organization": {
+                "Opening Overview": [
+                    "Connect to research aims",
+                    "Preview key findings",
+                    "Establish narrative flow"
+                ],
+                "Content Development": [
+                    "Present findings in logical order (e.g., important → less important)",
+                    "Use clear subsections for complex studies",
+                    "Include only data relevant to conclusions",
+                    "Move secondary data to Supplementary Information"
+                ],
+                "Paragraph Construction": [
+                    "Topic sentence stating key result",
+                    "Data description with clear reasoning",
+                    "Transition to next experiment/finding"
+                ]
+            },
+            "Technical Guidelines": [
+                "Reference visual elements effectively",
+                "Report both positive and negative results",
+                "Use consistent tense throughout", 
+                "Maintain objective language",
+                "Include response rates for surveys/interviews"
+            ]
+        }
+    },
+    {
+        "title": "Writing the Discussion Section",
+        "subsections": {
+            "Essential Components": {
+                "Opening (1-2 paragraphs)": [
+                    "State main findings",
+                    "Emphasize significance",
+                    "Avoid mere result repetition"
+                ],
+                "Scientific Context": [
+                    "Compare with existing literature",
+                    "Address agreements/disagreements",
+                    "Explain how findings extend previous work",
+                    "Explain how findings resolve contradictions",
+                    "Explain how findings fill knowledge gaps"
+                ],
+                "Critical Analysis": [
+                    "Acknowledge limitations transparently",
+                    "Discuss implications",
+                    "Suggest future research directions"
+                ]
+            },
+            "Audience-Specific Considerations": [
+                "Non-Experts:\n\t- Focus on key findings and implications;\n\t- Use clear explanations and explicit connections",
+                "Technical:\n\t- Focus on methods and limitations;\n\t- Use detailed analysis with methodological focus",
+                "Expert:\n\t- Focus on field contradictions;\n\t- Use complex analyses with theoretical implications"
+            ]
+        }
+    },
+    {
+        "title": "Quality Control Checklist",
+        "subsections": {
+            "Checklist Items": [
+                "Clear presentation of conclusions",
+                "Strong connection to research questions",
+                "Thorough literature comparison",
+                "Transparent limitations discussion",
+                "Well-defined future directions",
+                "Logical flow between sections",
+                "Appropriate level of detail for audience",
+                "Objective language throughout",
+                "No unexplained jargon",
+                "No new results in Discussion"
+            ]
+        }
+    },
+    {
+        "title": "Common Pitfalls to Avoid",
+        "subsections": {
+            "Pitfalls": [
+                "Introducing new results in Discussion",
+                "Over-interpreting findings",
+                "Ignoring contradictory evidence",
+                "Making unsupported claims",
+                "Including irrelevant data",
+                "Stream-of-consciousness writing",
+                "Assuming reader familiarity",
+                "Excessive interpretation in Results"
+            ]
+        }
+    }
+]
