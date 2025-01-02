@@ -1,6 +1,6 @@
-# TeX-Rex
+# tex-Rex 🦖
 
-TeX-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
+tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
 
 ## Project Structure
 
@@ -27,7 +27,6 @@ tex-rex/
 │   ├── figure_maker.py
 │   └── fig_prompt_coll/
 ├── tex_rex.ipynb         # Main notebook for analysis
-└── tex_rex_out.ipynb     # Output notebook
 ```
 
 ## Documentation

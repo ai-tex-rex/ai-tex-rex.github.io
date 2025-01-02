@@ -1,6 +1,6 @@
-# Contributing to TeX-Rex
+# Contributing to tex-Rex
 
-We welcome community involvement and feedback! Here's how you can contribute to TeX-Rex:
+We welcome community involvement and feedback! Here's how you can contribute to tex-Rex:
 
 ## 🐛 Reporting Issues and Feedback
 
@@ -23,4 +23,4 @@ Use our Issues page for bug reports, suggestions, questions, or any other feedba
 - Focus on the issue or topic at hand
 - Be patient with other community members
 
-Thank you for helping improve TeX-Rex! 
+Thank you for helping improve tex-Rex! 
