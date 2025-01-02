@@ -2,12 +2,12 @@
 
 <img src="logo.png" alt="tex-Rex Logo" width="200">
 
-`tex-Rex` is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. 
+`**tex-Rex**` is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. 
 Start writing in your native language! 🇨🇳 🇧🇷 🇫🇷 🇰🇷 🇯🇵 🇪🇸 
 ## About
 
 The tool will remain faithful to the original writing of the author but suggests improvement and asks for missing information. It can handle multiple languages, so you can start writing in your native language and it will do the analysis and then translate to English. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
-Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, `tex-Rex` provides automated feedback for each section of your scientific paper. Our analysis is based on established best practices in scientific communication and helps you craft clear, effective technical documents.
+Inspired by MIT's Nuclear Science and Engineering Communication Lab guidelines, `**tex-Rex**` provides automated feedback for each section of your scientific paper. Our analysis is based on established best practices in scientific communication and helps you craft clear, effective technical documents.
 
 ## Installation
 
@@ -138,7 +138,7 @@ We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.
 
 ## Acknowledgments
 
-`tex-Rex`'s analysis criteria are inspired by the scientific communication guidelines from MIT's Nuclear Science and Engineering Communication Lab (NSE CommLab). While our tool provides automated feedback, we encourage users to also refer to the original [NSE CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/) for detailed writing guidelines.
+`**tex-Rex**`'s analysis criteria are inspired by the scientific communication guidelines from MIT's Nuclear Science and Engineering Communication Lab (NSE CommLab). While our tool provides automated feedback, we encourage users to also refer to the original [NSE CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/) for detailed writing guidelines.
 
 ## License
 
