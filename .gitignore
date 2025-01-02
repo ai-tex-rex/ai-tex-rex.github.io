@@ -16,7 +16,6 @@ parts/
 sdist/
 var/
 wheels/
-tex-Rex_backup/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -49,4 +48,5 @@ _site/
 # Project specific
 tex_rex_me.ipynb
 tex_rex_m.ipynb
-tex_rex_out.ipynb
+placeholder.jpg
+tex-Rex_backup/
