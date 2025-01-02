@@ -2,6 +2,29 @@
 
 tex-Rex is an AI-powered academic paper analysis tool that helps researchers improve their scientific manuscripts through automated feedback and suggestions. It uses OpenRouter API to access advanced language models for comprehensive paper analysis.
 
+## Installation
+
+### Requirements
+- Python 3.10 or higher
+- pip3
+- curl or wget
+- unzip
+
+### Quick Install
+```bash
+# Using curl
+curl -O https://raw.githubusercontent.com/ai-tex-rex/tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+
+# Or using wget
+wget https://raw.githubusercontent.com/ai-tex-rex/tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+```
+
+The install script will:
+1. Check system requirements
+2. Download necessary files
+3. Set up the project structure
+4. Install required Python packages
+
 ## Project Structure
 
 The project is organized into several key components:
