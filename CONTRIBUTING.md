@@ -6,7 +6,7 @@ We welcome community involvement and feedback! Here's how you can contribute to 
 
 If you encounter any problems or have suggestions for improvements:
 
-1. Go to our [Issues page](https://github.com/ai-tex-rex/tex-rex/issues)
+1. Go to our [Issues page](https://github.com/ai-tex-rex/tex-rex.github.io/issues)
 2. Click on "New Issue"
 3. Provide a clear title and detailed description
 4. Include:
@@ -20,7 +20,7 @@ If you encounter any problems or have suggestions for improvements:
 
 Join our community discussions:
 
-1. Visit our [Discussions page](https://github.com/ai-tex-rex/tex-rex/discussions)
+1. Visit our [Discussions page](https://github.com/ai-tex-rex/tex-rex.github.io/discussions)
 2. Participate in existing discussions or start a new one
 3. Share your:
    - Ideas for new features
