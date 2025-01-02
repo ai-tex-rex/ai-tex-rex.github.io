@@ -1,0 +1,7 @@
+# Core dependencies
+httpx>=0.24.0  # For async HTTP requests
+ipython>=8.0.0  # For Jupyter notebook support and display functionality
+
+# Optional dependencies
+jupyter>=1.0.0  # For running Jupyter notebooks
+notebook>=7.0.0  # For notebook interface 
