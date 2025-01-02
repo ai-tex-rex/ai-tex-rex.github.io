@@ -13,10 +13,10 @@ tex-Rex is an AI-powered academic paper analysis tool that helps researchers imp
 ### Quick Install
 ```bash
 # Using curl
-curl -O https://raw.githubusercontent.com/ai-tex-rex/tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+curl -O https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
 
 # Or using wget
-wget https://raw.githubusercontent.com/ai-tex-rex/tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+wget https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 The install script will:

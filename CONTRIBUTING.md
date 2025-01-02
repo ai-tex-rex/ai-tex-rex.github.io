@@ -6,7 +6,7 @@ We welcome community involvement and feedback! Here's how you can contribute to 
 
 Use our Issues page for bug reports, suggestions, questions, or any other feedback:
 
-1. Go to our [Issues page](https://github.com/ai-tex-rex/tex-rex.github.io/issues)
+1. Go to our [Issues page](https://github.com/ai-tex-rex/ai-tex-rex.github.io/issues)
 2. Click on "New Issue"
 3. Provide a clear title and description
 4. For bug reports, include:
