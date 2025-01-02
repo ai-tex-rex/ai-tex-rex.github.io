@@ -18,7 +18,6 @@ var/
 wheels/
 tex-Rex_backup/
 hi.py
-tex_rex.ipynb
 Untitled Diagram copy.png
 *.egg-info/
 .installed.cfg
@@ -48,3 +47,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Ignore specific notebooks
+tex_rex_me.ipynb
+tex_rex_m.ipynb
+tex_rex_out.ipynb
