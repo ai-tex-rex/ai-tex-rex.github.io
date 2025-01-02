@@ -1,3 +1,6 @@
+# Python version
+python>=3.10.0
+
 # Core dependencies
 httpx>=0.24.0  # For async HTTP requests
 ipython>=8.0.0  # For Jupyter notebook support and display functionality

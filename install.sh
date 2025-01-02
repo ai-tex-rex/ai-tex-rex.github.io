@@ -8,6 +8,13 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
+# Check Python version is at least 3.10
+python_version=$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
+if [ "$(printf '%s\n' "3.10" "$python_version" | sort -V | head -n1)" != "3.10" ]; then
+    echo "[ERROR] Python 3.10 or higher is required. Current version: $python_version"
+    exit 1
+fi
+
 # Check pip
 if ! command -v pip3 &> /dev/null; then
     echo "[ERROR] pip3 is required but not installed."
