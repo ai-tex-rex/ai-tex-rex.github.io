@@ -37,7 +37,7 @@ The install script will:
 4. Install required Python packages
 
 ### Installation on macOS, from scratch
-1. Install Homebrew, if not already installed
+1. Open Terminal and install Homebrew, if not already installed
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
