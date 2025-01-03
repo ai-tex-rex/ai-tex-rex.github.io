@@ -36,6 +36,38 @@ The install script will:
 3. Set up the project structure
 4. Install required Python packages
 
+### Installation on macOS, from scratch
+1. Install Homebrew, if not already installed
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Install Python
+```bash
+brew install python@3.10
+```
+3. Create a new virtual environment, change the name
+```bash
+python3 -m venv my_tex_rex_env
+```
+4. Activate the virtual environment
+```bash
+source my_tex_rex_env/bin/activate
+```
+5. Use the install script
+```bash
+curl -O https://raw.githubusercontent.com/ai-tex-rex/ai-tex-rex.github.io/main/install.sh && chmod +x install.sh && ./install.sh
+```
+6. Install the missing packages, for example:
+```bash
+pip3 install httpx ipython jupyter notebook
+```
+7. Open the jupyter notebook
+```bash
+jupyter notebook
+```
+8. Run the notebook
+
+
 ## Project Structure
 
 The project is organized into several key components:
@@ -138,7 +170,7 @@ We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.
 
 ## Acknowledgments
 
-**`tex-Rex`**'s analysis criteria are inspired by the scientific communication guidelines from MIT's Nuclear Science and Engineering Communication Lab (NSE CommLab). While our tool provides automated feedback, we encourage users to also refer to the original [NSE CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/) for detailed writing guidelines.
+**`tex-Rex`**'s analysis criteria are inspired by the scientific communication guidelines from MIT's Nuclear Science and Engineering Communication Lab (NSE CommLab) and the [NSE CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/).
 
 ## License
 
